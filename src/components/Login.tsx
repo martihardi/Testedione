@@ -2,8 +2,16 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import '../App.css'
+import { useNavigate } from 'react-router-dom'; 
 
-export function Login() {
+ function Login() {
+    const navigate = useNavigate(); 
+
+   const handleLogin = () => {
+    console.log('Login');
+    navigate('/home');
+    
+    }
   return (
     <div className="Loginz">
     <div className="LoginBox">
@@ -20,7 +28,7 @@ export function Login() {
         />
       </div>
       <div>
-        <button className="submit">entrar</button>
+        <button onClick={handleLogin} className="submit">entrar</button>
       </div>
     </div>
     </div>
