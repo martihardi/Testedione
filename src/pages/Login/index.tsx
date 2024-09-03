@@ -9,7 +9,7 @@ import { useNavigate } from 'react-router-dom';
 
    const handleLogin = () => {
     console.log('Login');
-    navigate('/home');
+    navigate('/page');
     
     }
   return (
@@ -28,7 +28,7 @@ import { useNavigate } from 'react-router-dom';
         />
       </div>
       <div>
-        <button className="Button1"  onClick={handleLogin} className="submit">entrar</button>
+        <button onClick={handleLogin} className="submit">entrar</button>
       </div>
     </div>
     </div>
