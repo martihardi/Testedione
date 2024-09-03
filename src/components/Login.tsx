@@ -28,7 +28,7 @@ import { useNavigate } from 'react-router-dom';
         />
       </div>
       <div>
-        <button onClick={handleLogin} className="submit">entrar</button>
+        <button className="Button1"  onClick={handleLogin} className="submit">entrar</button>
       </div>
     </div>
     </div>

@@ -1,9 +1,11 @@
 
 .LoginBox{
-width: 350px;
+width: 400px;
 height: 250px;
 background-color: rgb(255, 255, 255);
-border-radius: 40px;
+border-radius: 10px;
+box-shadow: 20px;
+
 }
 
 .inputs{
@@ -17,27 +19,47 @@ border-radius: 40px;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #cdcdcd;
+  background-color: #e6e6e6;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  align-content: center;
+}
+
+.Password{
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(239, 239, 239);
+  height: 15px;
+  border-radius: 6px;
+  border-width: 1;
+  padding-bottom: 20px;
+  align-self: center;
 }
 
 .User{
   width: 100%;
-  height: 40px;
+  height: 15px;
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(239, 239, 239);
   border-radius: 6px;
   border-width: 1;
   padding-bottom: 20px;
 }
 
 .LoginHeader{
-  font-size: 40px;
+  padding-top: 20px;
+  font-size: 25px;
   font-weight: bolder;
-  color: rgb(113, 113, 120);
+  color: rgb(74, 74, 76);
   font-family: sans-serif;
+}
+
+.Button1{
+  background-color: cornflowerblue;
+  width: 100%;
+  height: 15px;
 }
 
 #root {
@@ -45,4 +67,5 @@ border-radius: 40px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  
 }
