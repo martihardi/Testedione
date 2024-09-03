@@ -1,12 +1,19 @@
 
 import './styles.css'
-import { useNavigate } from 'react-router-dom';
+import { useState } from 'react';
 
 export function Login() {
-  const navigate = useNavigate();
-
+  const [user, setUser] = useState('');
+  const [password, setPassword] = useState('');
+  
   const handleLogin = () => {
-    navigate('/home');
+    if (user === 'admin' && password === 'admin') {
+      localStorage.setItem('login', 'true');
+      window.location.href = '/dashboard' ;
+    } else {
+      alert('Usuário ou senha inválidos');
+    }
+  }
 
   }
   return (
@@ -16,10 +23,14 @@ export function Login() {
         <div className="inputs">
           <input
             className="User"
+            value={user}
+            onChange={(e) => setPassword(e.target.value)}
             placeholder="coloque seu usuario"
           />
           <input
             className="Password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
             placeholder="coloque sua senha"
             type="password"
           />
