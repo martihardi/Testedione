@@ -14,7 +14,7 @@ const App: React.FC = () => {
 
     return (
         <>
-        {isLoggedIn ? <router /> : <Login />}
+        {isLoggedIn ? <Router /> : <Login />}
 
         </>
     );
