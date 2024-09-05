@@ -15,7 +15,7 @@ export function Login() {
     }
   }
 
-  }
+  
   return (
     <div className="Login">
       <div className="LoginBox">
@@ -24,7 +24,7 @@ export function Login() {
           <input
             className="User"
             value={user}
-            onChange={(e) => setPassword(e.target.value)}
+            onChange={(e) => setUser(e.target.value)}
             placeholder="coloque seu usuario"
           />
           <input
@@ -41,5 +41,5 @@ export function Login() {
       </div>
     </div>
   )
-}
 
+}
