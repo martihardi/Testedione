@@ -17,8 +17,8 @@ export function Login() {
 
   
   return (
-    <div className="Login">
-      <div className="LoginBox">
+    <div className=" flex justify-center h-screen bg-neutral-200 content-cente py-96 ">
+      <div className="bg-slate-50 justify-center content-center rounded-lg shadow-lg ">
         <div className="LoginHeader">Login</div>
         <div className="inputs">
           <input
