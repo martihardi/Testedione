@@ -2,7 +2,7 @@ import img from "../../assets/imagem.jpg"
 
 export const Home = () => {
     return (
-        <div className="flex align-middle content-center justify-center bg-violet-900 p-4" >
+        <div className="flex align-middle content-center justify-center bg-violet-900 p-4 shadow-xl p-8" >
             <div className="w-96 h-96 flex flex-col justify-center content-center align-middle ">
             <div className=" text-4xl text-white ">
                Veja o Guia definitivo para conquistar seus objetivos como dev em 2022
@@ -12,7 +12,7 @@ export const Home = () => {
             </div>
             </div>
             <div>
-             <img src={img}/>
+             <img src={img} className="rounded-lg "/>
             </div>
         </div>
     )
