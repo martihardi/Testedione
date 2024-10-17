@@ -5,7 +5,7 @@ function Navbar() {
     const navigate = useNavigate();
 
     return (
-        <div className="bg-violet-900 h-52 flex justify-center items-center text-white">
+        <div className="bg-violet-900 h-52 flex justify-center items-center text-white shadow-xl">
             <div className='w-[80%] flex flex-row justify-between'>
                 <div>
                     <p className='text-4xl font-bold'>The Blog</p>
