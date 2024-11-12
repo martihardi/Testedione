@@ -14,6 +14,6 @@ export const Home = () => {
             <div>
              <img src={img} className="rounded-lg "/>
             </div>
-        </div>
+        </div>  
     )
-}
+} 
